@@ -2,16 +2,13 @@ import React from "react";
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, Image, Alert } from 'react-native';
 import WelcomeScreen from './app/screens/WelcomeScreen';
-// import { useAccessibilityInfo } from "@react-native-community/hooks";
-
+import ViewImageScreen from "./app/screens/ViewImageScreen";
 export default function App() {
   function handlePress() {
     console.log("Text Clicked!")
   }
   // console.log(require("../app/assets/adaptive-icon.png"));
-  return (
-  <WelcomeScreen />
-  );
+  return <ViewImageScreen />;
 }
 
 // const styles = StyleSheet.create({
