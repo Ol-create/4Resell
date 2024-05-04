@@ -8,22 +8,11 @@ import ViewImageScreen from "./app/screens/ViewImageScreen";
 import AppText from "./app/component/AppText"
 import AppButton from "./app/component/AppButton"
 import Card from "./app/component/Card";
+import ListingDetailScreen from "./app/screens/ListingDetailScreen";
 
 export default function App() {
   return (
-    <View
-      style={{
-        backgroundColor: "#f8f4f4",
-        paddingTop: 100,
-        padding: 20,
-      }}
-    >
-      <Card
-        title="Red Jacket for sale"
-        subTitle="$99.7"
-        image={require("./app/assets/jacket.jpg")}
-      />
-    </View>
+   <ListingDetailScreen />
   );
 }
   
