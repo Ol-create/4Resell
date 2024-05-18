@@ -13,17 +13,19 @@ import ListingDetailScreen from "./app/screens/ListingDetailScreen";
 import MessagesScreen from "./app/screens/MessagesScreen";
 import Screen from "./app/component/Screen";
 import Icon from "./app/component/Icon";
+import ListItem from "./app/component/ListItem";
 
 export default function App() {
   return (
     <GestureHandlerRootView>
       <Screen>
-        <Icon
-          name="email"
-          size={50}
-          backgroundColor="red"
-        iconColor="white"/>
-     </Screen>
+        <ListItem
+          title="My title"
+          subTitle="My subTitle"
+          // image={require("./app/assets/mosh.jpg")}
+          IconComponent={<Icon name="email"/>}
+        />
+      </Screen>
     </GestureHandlerRootView>
   );
 }
