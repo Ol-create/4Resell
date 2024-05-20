@@ -16,12 +16,14 @@ import Icon from "./app/component/Icon";
 import ListItem from "./app/component/ListItem";
 import AccountScreen from "./app/screens/AccountScreen";
 import ListingsScreen from "./app/screens/ListingsScreen";
+import AppTextInput from "./app/component/AppTextInput";
 
 export default function App() {
  const [age, setAge] = useState(0)
   return (
     <GestureHandlerRootView>
       <Screen>
+        <AppTextInput icon="email" placeholder="Enter your email"/>
         </Screen>
     </GestureHandlerRootView>
   );
