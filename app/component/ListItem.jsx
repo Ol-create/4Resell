@@ -23,7 +23,10 @@ export default function ListItem({ title, subTitle, image, IconComponent, onPres
 }
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    border: 20,
+    backgroundColor: "white",
+  },
   image: {
     width: 70,
     height: 70,
@@ -40,5 +43,6 @@ const styles = StyleSheet.create({
     marginTop: 7,
     flexDirection: "row",
     alignItems: "center",
+    marginBottom: 20,
   },
 });

@@ -8,6 +8,7 @@ export default function Card({title, subTitle, image}) {
   return (
     <View
       style={{
+        marginBottom: 15,
         overflow: "hidden",
       }}
     >

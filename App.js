@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { StatusBar, setStatusBarBackgroundColor } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button, Image, Alert } from 'react-native';
-import { GestureHandlerRootView } from "react-native-gesture-handler";
+import { StyleSheet, Text, View, Button, Image, Alert, TextInput } from 'react-native';
+import { GestureHandlerRootView, } from "react-native-gesture-handler";
 import {MaterialCommunityIcons} from '@expo/vector-icons'
 
 import WelcomeScreen from './app/screens/WelcomeScreen';
@@ -14,18 +14,15 @@ import MessagesScreen from "./app/screens/MessagesScreen";
 import Screen from "./app/component/Screen";
 import Icon from "./app/component/Icon";
 import ListItem from "./app/component/ListItem";
+import AccountScreen from "./app/screens/AccountScreen";
+import ListingsScreen from "./app/screens/ListingsScreen";
 
 export default function App() {
+ const [age, setAge] = useState(0)
   return (
     <GestureHandlerRootView>
       <Screen>
-        <ListItem
-          title="My title"
-          subTitle="My subTitle"
-          // image={require("./app/assets/mosh.jpg")}
-          IconComponent={<Icon name="email"/>}
-        />
-      </Screen>
+        </Screen>
     </GestureHandlerRootView>
   );
 }

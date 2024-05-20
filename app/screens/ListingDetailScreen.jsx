@@ -14,7 +14,7 @@ export default function ListingDetailScreen() {
         <AppText style={styles.price}>$100</AppText>
         <View style={styles.userContainer}>
           <ListItem
-            image={require("../assets/mosh.jpg")}
+            image={require("../assets/paul.png")}
             title="Oluyemi Paul"
             subTitle="5 Listing"
           />
