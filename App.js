@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { StatusBar, setStatusBarBackgroundColor } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button, Image, Alert, TextInput } from 'react-native';
+import { StyleSheet, Text, View, Button, Image, Alert, TextInput, Switch } from 'react-native';
 import { GestureHandlerRootView, } from "react-native-gesture-handler";
 import {MaterialCommunityIcons} from '@expo/vector-icons'
 
@@ -17,14 +17,16 @@ import ListItem from "./app/component/ListItem";
 import AccountScreen from "./app/screens/AccountScreen";
 import ListingsScreen from "./app/screens/ListingsScreen";
 import AppTextInput from "./app/component/AppTextInput";
+import AppPicker from "./app/component/AppPicker";
 
 export default function App() {
- const [age, setAge] = useState(0)
+ const [isNew, setIsNew] = useState(false)
   return (
     <GestureHandlerRootView>
       <Screen>
-        <AppTextInput icon="email" placeholder="Enter your email"/>
-        </Screen>
+        <AppPicker icon="apps" placeholder="Category"/>
+        <AppTextInput icon="email" placeholder="Email"/>
+      </Screen>
     </GestureHandlerRootView>
   );
 }
