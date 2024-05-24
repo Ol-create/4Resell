@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Formik } from 'formik';
 import { StatusBar, setStatusBarBackgroundColor } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, Image, Alert, TextInput, Switch } from 'react-native';
 import { GestureHandlerRootView, } from "react-native-gesture-handler";
@@ -18,15 +19,15 @@ import AccountScreen from "./app/screens/AccountScreen";
 import ListingsScreen from "./app/screens/ListingsScreen";
 import AppTextInput from "./app/component/AppTextInput";
 import AppPicker from "./app/component/AppPicker";
+import LoginScreen from "./app/screens/LoginScreen";
 
 export default function App() {
- const [isNew, setIsNew] = useState(false)
+
   return (
     <GestureHandlerRootView>
-      <Screen>
-        <AppPicker icon="apps" placeholder="Category"/>
-        <AppTextInput icon="email" placeholder="Email"/>
-      </Screen>
+      <View style={{marginHorizontal: 5}}>
+        <LoginScreen />
+      </View>
     </GestureHandlerRootView>
   );
 }
