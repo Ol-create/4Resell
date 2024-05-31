@@ -26,7 +26,7 @@ export default function App() {
 
   return (
     <GestureHandlerRootView>
-      <ListingEditingScreen />
+      <MessagesScreen />
     </GestureHandlerRootView>
   );
 }
