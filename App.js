@@ -20,14 +20,13 @@ import ListingsScreen from "./app/screens/ListingsScreen";
 import AppTextInput from "./app/component/AppTextInput";
 import AppPicker from "./app/component/AppPicker";
 import LoginScreen from "./app/screens/LoginScreen";
+import ListingEditingScreen from "./app/screens/ListingEditingScreen";
 
 export default function App() {
 
   return (
     <GestureHandlerRootView>
-      <View style={{marginHorizontal: 5}}>
-        <LoginScreen />
-      </View>
+      <ListingEditingScreen />
     </GestureHandlerRootView>
   );
 }
